@@ -24,7 +24,10 @@ $method = strtolower($_SERVER['REQUEST_METHOD']);
 //resolve the uri and dispatch method of controller, if not exists throw exception
 if (isset($routes[$uri])) {
     if($method !== $routes[$uri]['method']){
-        throw new App\Exceptions\MethodNotAllowedException('Method Not Allowed for this route',400,null);
+        throw new App\Exceptions\MethodNotAllowedException('Method Not Allowed for this route');
     }
     RouterResolver::{$method}($routes[$uri]['controller'],$routes[$uri]['action'],$_REQUEST);
+}
+else{
+     throw new App\Exceptions\NotFoundHttpException("for this route /$uri ");
 }

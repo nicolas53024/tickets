@@ -9,7 +9,9 @@ class HomeController extends BaseController
 {
     public function index($request)
     {
-        echo 'mi primera ruta';
+        
+        
+        echo 'mi primer controlletr ';
     }
 
     public function index2()

@@ -4,8 +4,14 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
-        },
-        "files": ["Helpers/ErrorHandler.php"]
+            "App\\": "app/",
+            "Helpers\\": "Helpers/"
+
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Test\\": "tests/"
+        }
     }
 }

@@ -6,10 +6,10 @@ return [
     '/' => [
         'method' => 'get',
         'controller' => '\App\Controllers\HomeController',
-        'action' => 'indexs',
+        'action' => 'index',
     ],
     'home' => [
-        'method' => 'get',
+        'method' => 'post',
         'controller' => '\App\Controllers\HomeController',
         'action' => 'index2',
     ],
