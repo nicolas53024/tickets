@@ -7,8 +7,9 @@ use App\Exceptions\MethodNotAllowedException;
 class ErrorHandler
 {
     /**
-     *
-     *
+     * put into view tracking information of exception ocurred
+     *  @param Exception $exception
+     *  @return mixed
      */
     public function handle($exception)
     {
