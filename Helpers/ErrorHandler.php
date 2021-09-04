@@ -23,7 +23,7 @@ class ErrorHandler
             http_response_code(Http::INTERNAL_SERVER_ERROR);
             $code=Http::INTERNAL_SERVER_ERROR;
             ob_start();
-            include_once realpath("../app/views/errors/trackExceptions.phtml");
+            include_once realpath("../app/views/errors/TrackExceptions.phtml");
             ob_end_flush();
         } else {
             if ($exception instanceof MethodNotAllowedException) {

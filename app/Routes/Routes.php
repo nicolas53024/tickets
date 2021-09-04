@@ -7,9 +7,10 @@ return [
         'method' => 'get',
         'controller' => '\App\Controllers\HomeController',
         'action' => 'index',
+        'auth'=>true
     ],
-    'home' => [
-        'method' => 'post',
+    '/home' => [
+        'method' => 'get',
         'controller' => '\App\Controllers\HomeController',
         'action' => 'index2',
     ],

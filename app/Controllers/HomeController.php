@@ -10,7 +10,10 @@ class HomeController extends BaseController
 {
     public function index(Request $request)
     {
-         echo $request->inputExists('var2');
+        return view('home',[
+            'nombre'=>'Nicolas',
+            'apellido'=>'Aldana'
+        ]);
     }
 
     public function index2($request)
