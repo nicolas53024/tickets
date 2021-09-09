@@ -4,20 +4,13 @@
 namespace App\Controllers;
 
 use App\Libraries\BaseController;
-use App\Libraries\Request;
+use App\Models\UserModel;
 
 class HomeController extends BaseController
 {
-    public function index(Request $request)
+    public function index()
     {
-        return view('home',[
-            'nombre'=>'Nicolas',
-            'apellido'=>'Aldana'
-        ]);
+        return view('home');
     }
 
-    public function index2($request)
-    {
-        echo 'mi segunda ruta';
-    }
 }

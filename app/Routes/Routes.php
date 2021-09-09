@@ -9,9 +9,9 @@ return [
         'action' => 'index',
         'auth'=>true
     ],
-    '/home' => [
-        'method' => 'get',
-        'controller' => '\App\Controllers\HomeController',
-        'action' => 'index2',
+    '/login' => [
+        'method' => 'post',
+        'controller' => '\App\Controllers\LoginController',
+        'action' => 'login',
     ],
 ];
